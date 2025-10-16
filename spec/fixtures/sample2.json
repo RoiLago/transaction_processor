@@ -1,38 +1,38 @@
 {
-  "organization_bic": "OIVUSCLQXXX",
-  "organization_iban": "FR10474608000002006107XXXXX",
+  "organization_bic": "BIC",
+  "organization_iban": "IBAN",
   "credit_transfers": [
     {
       "amount": "23.17",
       "currency": "EUR",
       "counterparty_name": "Bip Bip",
-      "counterparty_bic": "CRLYFRPPTOU",
-      "counterparty_iban": "EE383680981021245685",
-      "description": "Neverland/6318"
+      "counterparty_bic": "BIC6",
+      "counterparty_iban": "IBAN6",
+      "description": "Description6"
     },
     {
       "amount": "98234",
       "currency": "EUR",
       "counterparty_name": "Wile E Coyote",
-      "counterparty_bic": "ZDRPLBQI",
-      "counterparty_iban": "DE9935420810036209081725212",
-      "description": "//Spacex/AJGRBX/32"
+      "counterparty_bic": "BIC7",
+      "counterparty_iban": "IBAN7",
+      "description": "Description7"
     },
     {
       "amount": "8024.99",
       "currency": "EUR",
       "counterparty_name": "Bugs Bunny",
-      "counterparty_bic": "RNJZNTMC",
-      "counterparty_iban": "FR0010009380540930414023042",
-      "description": "2020/DuckSeason/"
+      "counterparty_bic": "BIC8",
+      "counterparty_iban": "IBAN8",
+      "description": "Description8"
     },
     {
       "amount": "200",
       "currency": "EUR",
       "counterparty_name": "Daffy Duck",
-      "counterparty_bic": "DDFCNLAM",
-      "counterparty_iban": "NL24ABNA5055036109",
-      "description": "2020/RabbitSeason/"
+      "counterparty_bic": "BIC9",
+      "counterparty_iban": "IBAN9",
+      "description": "Description9"
     }
   ]
 }

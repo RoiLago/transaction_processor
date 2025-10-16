@@ -53,16 +53,16 @@ rails s
 curl -X POST \
   -H "Content-Type: application/json" \
   -d '{
-    "organization_bic": "OIVUSCLQXXX",
-    "organization_iban": "FR10474608000002006107XXXXX",
+    "organization_bic": "BIC",
+    "organization_iban": "IBAN",
     "credit_transfers": [
       {
         "amount": "14.5",
         "currency": "EUR",
         "counterparty_name": "Bip Bip",
-        "counterparty_bic": "CRLYFRPPTOU",
-        "counterparty_iban": "EE383680981021245685",
-        "description": "Wonderland/4410"
+        "counterparty_bic": "BIC1",
+        "counterparty_iban": "IBAN1",
+        "description": "Description1"
       }
     ]
   }' \

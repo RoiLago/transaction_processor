@@ -3,6 +3,6 @@ class Transaction < ApplicationRecord
 
   belongs_to :bank_account, foreign_key: "bank_account_id"
 
-  # todo validates all fields present
-  validates :amount_cents, :counterparty_iban, :counterparty_name, presence: true
+  validates :counterparty_name, :counterparty_iban, :amount_cents, :amount_currency, :bank_account_id, :description, presence: true
+  validates :amount_cents, numericality: { only_integer: true }
 end

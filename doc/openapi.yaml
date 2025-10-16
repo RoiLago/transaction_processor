@@ -1,0 +1,59 @@
+openapi: 3.0.0
+info:
+  title: Bulk Transfer API
+  version: 1.0.0
+  description: API for processing bulk transfer requests.
+paths:
+  /api/v1/transfers/bulk:
+    post:
+      summary: Create a bulk transfer request
+      description: Submit a bulk transfer request with multiple credit transfer entries.
+      operationId: createBulkTransferRequest
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [organization_bic, organization_iban, credit_transfers]
+              properties:
+                organization_bic:
+                  type: string
+                  description: The BIC of the customer's organization.
+                organization_iban:
+                  type: string
+                  description: The IBAN of the customer's organization.
+                credit_transfers:
+                  type: array
+                  description: List of individual credit transfer entries.
+                  items:
+                    type: object
+                    required: [amount, currency, counterparty_bic, counterparty_iban, counterparty_name, description]
+                    properties:
+                      amount:
+                        type: string
+                        description: Amount of the transfer up to two decimals.
+                        example: "13.22"
+                      currency:
+                        type: string
+                        example: EUR
+                        description: Currency of the transfer (always EUR).
+                      counterparty_bic:
+                        type: string
+                        description: The BIC of the counterparty's bank.
+                      counterparty_iban:
+                        type: string
+                        description: The IBAN of the counterparty's account.
+                      counterparty_name:
+                        type: string
+                        description: Name of the counterparty.
+                        example: Lufthansa
+                      description:
+                        type: string
+                        description: Description of the transfer.
+                        example: Ski equipment
+      responses:
+        '201':
+          description: Bulk transfer request created successfully.
+        '422':
+          description: Bulk transfer request failed.

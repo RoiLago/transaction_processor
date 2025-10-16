@@ -1,30 +1,30 @@
 {
-  "organization_bic": "OIVUSCLQXXX",
-  "organization_iban": "FR10474608000002006107XXXXX",
+  "organization_bic": "BIC",
+  "organization_iban": "IBAN",
   "credit_transfers": [
     {
       "amount": "14.5",
       "currency": "EUR",
       "counterparty_name": "Bip Bip",
-      "counterparty_bic": "CRLYFRPPTOU",
-      "counterparty_iban": "EE383680981021245685",
-      "description": "Wonderland/4410"
+      "counterparty_bic": "BIC3",
+      "counterparty_iban": "IBAN3",
+      "description": "Description3"
     },
     {
       "amount": "61238",
       "currency": "EUR",
       "counterparty_name": "Wile E Coyote",
-      "counterparty_bic": "ZDRPLBQI",
-      "counterparty_iban": "DE9935420810036209081725212",
-      "description": "//TeslaMotors/Invoice/12"
+      "counterparty_bic": "BIC4",
+      "counterparty_iban": "IBAN4",
+      "description": "Description4"
     },
     {
       "amount": "999",
       "currency": "EUR",
       "counterparty_name": "Bugs Bunny",
-      "counterparty_bic": "RNJZNTMC",
-      "counterparty_iban": "FR0010009380540930414023042",
-      "description": "2020 09 24/2020 09 25/GoldenCarrot/"
+      "counterparty_bic": "BIC5",
+      "counterparty_iban": "IBAN5",
+      "description": "Description5"
     }
   ]
 }
